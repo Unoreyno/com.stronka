@@ -40,12 +40,14 @@ public class jsonActions {
 
         return newPosts;
     }
-    // public static Post[] getPost(int id, String title, String content) throws JsonParseException, JsonMappingException, IOException {
+    /*
+    public static Post[] getPost(int id) throws JsonParseException, JsonMappingException, IOException {
+
+    Post[] found = Post[title, content]
+     return found
         
-    // return 
         
-        
-    // }
+    }*/
      
     
 }

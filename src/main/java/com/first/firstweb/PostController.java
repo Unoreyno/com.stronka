@@ -26,8 +26,8 @@ public class PostController {
     public Post[] gettingPost(String title, String content) throws IOException {
 
         return jsonActions.getPost(title,content);
-    }
-    */
+    }*/
+    
 
             
           
