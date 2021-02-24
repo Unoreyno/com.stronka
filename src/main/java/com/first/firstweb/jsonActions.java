@@ -40,7 +40,12 @@ public class jsonActions {
 
         return newPosts;
     }
-
+    // public static Post[] getPost(int id, String title, String content) throws JsonParseException, JsonMappingException, IOException {
+        
+    // return 
+        
+        
+    // }
      
     
 }
