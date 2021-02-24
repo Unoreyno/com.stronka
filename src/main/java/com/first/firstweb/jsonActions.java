@@ -20,13 +20,14 @@ public class jsonActions {
 
         
         int i = 0;
+        
         for(Post o : oldPosts){
             newPosts[i] = o;
-
+            
             i++;
         }
 
-        Post newPost = new Post(1,title,content);
+        Post newPost = new Post(2,title,content);
         newPosts[i] = newPost;
 
         
