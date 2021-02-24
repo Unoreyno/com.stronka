@@ -3,9 +3,9 @@ package com.first.firstweb;
  import com.fasterxml.jackson.annotation.JsonProperty;
 // @JsonProperty("id") 
 public class Post {
-    int id;
-    String title;
-    String content;
+    public int id;
+    public String title;
+    public String content;
     public Post(
         @JsonProperty("id") int id,
         @JsonProperty("title") String title,
