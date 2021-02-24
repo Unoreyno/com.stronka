@@ -20,14 +20,17 @@ public class jsonActions {
 
         
         int i = 0;
+        int maxVal = 0;
         
         for(Post o : oldPosts){
             newPosts[i] = o;
-            
             i++;
+            maxVal = Math.max(i, maxVal);
+            
+            
         }
-
-        newPosts[oldPosts.length] = new Post(i,title,content);
+        int newId = maxVal+1;
+        newPosts[oldPosts.length] = new Post(newId,title,content);
 
         // Post newPost = new Post(1,title,content);
         // newPosts[i] = newPost;
@@ -37,5 +40,7 @@ public class jsonActions {
 
         return newPosts;
     }
+
+     
     
 }

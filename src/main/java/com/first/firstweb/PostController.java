@@ -19,8 +19,9 @@ public class PostController {
     @GetMapping("/addPost")
     public Post[] addingPost(String title, String content) throws IOException {
 
-        return jsonActions.addPost(content,title);
+        return jsonActions.addPost(title,content);
     }
+    
         
 
             
