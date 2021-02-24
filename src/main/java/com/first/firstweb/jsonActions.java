@@ -9,11 +9,17 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class jsonActions {
 
-    public Post addPost(String title, String content) throws JsonParseException, JsonMappingException, IOException {
+    public static Post addPost(String title, String content) throws JsonParseException, JsonMappingException, IOException {
         ObjectMapper objMap = new ObjectMapper();
         Post[] oldPosts = objMap.readValue(new File("src/main/resources/static/data.json"), Post[].class);
 
-        // Wyśle pan to na githuba, za szybko pan trochętłumaczy i nie nadążałem z pisaniem kodu
+        for(Post o : oldPosts){
+            System.out.println("POOOOOOOST");
+            System.out.println(o.id);
+            System.out.println(o.title);
+            System.out.println(o.content);
+            System.out.println("POOOOOOOST");
+          }
 
         Post post = new Post(1,title,content);
         return post;
