@@ -27,8 +27,10 @@ public class jsonActions {
             i++;
         }
 
-        Post newPost = new Post(2,title,content);
-        newPosts[i] = newPost;
+        newPosts[oldPosts.length] = new Post(i,title,content);
+
+        // Post newPost = new Post(1,title,content);
+        // newPosts[i] = newPost;
 
         
         objMap.writeValue(new File("src/main/resources/static/data.json"), newPosts);
